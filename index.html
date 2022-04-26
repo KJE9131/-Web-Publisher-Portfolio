@@ -1,2057 +1,512 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+      content="width=device-width, initial-scale=0, minimum-scale=1, maximum-scale=1, user-scalable=yes"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta property="og:image" content="images/ka.png" />
+    <meta property="og:url" content="http://kje9131.dothome.co.kr/" />
+    <meta property="og:title" content="김정은 | Web Publisher Portfolio" />
+    <meta
+      property="og:description"
+      content="Web Publisher 김정은 Portfolio 입니다."
+    />
+    <title>김정은 | Web Publisher Portfolio</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,demo,scroll,loop,continuous"
+    />
+    <meta name="Resource-type" content="Document" />
+    <link rel="shortcut icon" href="images/moon.png" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>국립공주대학교</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <div id="black_bg"></div>
-    <a href="#none" id="top">
-      <img src="images/top-goto.png" alt="top버튼" />
-    </a>
-    <div id="video">
-      <ul class="video">
-        <li class="video1 play">
-          <iframe
-            width="1920px"
-            height="1080px"
-            src="https://www.youtube.com/embed/e0e5Aok-hfM
-                ?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=e0e5Aok-hfM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-            국립공주대학교 홍보영상</iframe
-          >
-        </li>
-        <li class="video2">
-          <iframe
-            width="100%"
-            height="1080px"
-            src="https://www.youtube.com/embed/g75Kohg4Jpw
-                ?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=g75Kohg4Jpw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-            국립공주대학교 홍보영상</iframe
-          >
-        </li>
-      </ul>
-      <figure>
-        <img src="images/visual-logo.png" alt="공주대학교 로고" />
-      </figure>
-      <ul class="video_page cl">
-        <li class="select"><a href="#none"></a></li>
-        <li><a href="#none"></a></li>
-      </ul>
-    </div>
-    <header>
-      <div class="top_menu">
-        <a href="#none" class="top_menu1">
-          <p>POPUP<span>5</span></p>
-        </a>
-        <a href="#none" class="top_menu2 pc">
-          <p>LANGUAGE</p>
-          <img src="images/lan-arrow.png" alt="더보기" />
-        </a>
-        <ul>
+    <div
+      style="position: fixed; top: 50px; left: 50px; color: white; z-index: 999"
+      id="callbacksDiv"
+    ></div>
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <h1>PORTFOLIO</h1>
+        <p class="year">2022</p>
+        <div class="intro">
+          <h2>
+            한 걸음 더 나아가며 <span>도전</span>하는 저는<br>
+            Web Publisher <span>김정은</span>입니다.<br>
+          </h2>
+          <img src="images/intro_bg.png" alt="인트로 원형" id="intro_bg">
+        </div>
+        <ul class="bnb">
           <li>
-            <a href="#none">English</a>
+            <a href="#secondPage">
+              <p>ABOUT</p>
+            </a>
           </li>
           <li>
-            <a href="#none">Chinese</a>
+            <a href="#3rdPage">
+              <p>PORTFOLIO</p>
+            </a>
+          </li>
+          <li>
+            <a href="process1.html">
+              <p>PROCESS</p>
+            </a>
+          </li>
+          <li>
+            <a href="#lastPage">
+              <p>CONTACT</p>
+            </a>
           </li>
         </ul>
+        <i>※ 해당 페이지는 FULL HD를 권장합니다.</i>
       </div>
-      <div id="gnb">
-        <a href="#none" class="gnb_icon">
-          <img src="images/quick-menu-icon01.png" alt="퀵메뉴 바로가기" />
-        </a>
-        <ul class="gnb">
-          <li class="main_menu">
-            <a href="#none" class="menu_click pc">
-              <img src="images/quick-menu-icon01.png" />
-              <p data-txt="MAIN MENU" data-tet="대표메뉴">대표메뉴</p>
-            </a>
-            <nav class="gnb_right">
-              <ul class="quick_menu_button">
-                <li>
-                  <a href="#none">
-                    <img src="images/ico-login.png" alt="로그인" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/util-icon02.png" alt="검색" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/util-icon03.png" alt="LANG" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <strong>QUICK MENU</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/menu-close.png" alt="닫기" />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_list">
-                <li>
-                  <a href="#none">
-                    <b>대학소개</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>e-총장실</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>대학소개</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>대학홍보</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>대학현황</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>규정</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>캠퍼스안내</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>대학/대학원</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>본부소속</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>단과대학</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>대학원</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>계약학과</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>일학습병행</i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>입학안내</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>입학원안내사이트</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>대학원</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>Admission Guide</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>산학/연구</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>산학협력단</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>연구기관</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>대학생활</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>학사종합안내</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>학사일정안내</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>증명서발급</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>장학안내</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>병무행정</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>학생복지</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>정보광장</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>공지사항</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>곰나루광장</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>안내</b>
-                    <img src="images/q-more-off.png" class="select" />
-                    <img src="images/q-more-on.png" />
-                  </a>
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="#none">
-                          <i>SITEMAP</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>개인정보처리방침</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>통합검색</i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>정부3.0정보공개</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#none">
-                          <i>청렴행정센터</i>
-                          <img src="images/q-more-off.png" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-              <ul class="quick_menu_going">
-                <li>
-                  <a href="#none">
-                    <b>학과바로가기</b>
-                    <img src="images/q-more-off.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>교내사이트 바로가기</b>
-                    <img src="images/q-more-off.png" />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_sns">
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-f.png"
-                      alt="페이스북 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-f-c.png"
-                      alt="페이스북 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-b.png"
-                      alt="블로그 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-b-c.png"
-                      alt="블로그 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-y.png"
-                      alt="유튜브 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-y-c.png"
-                      alt="유튜브 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-i.png"
-                      alt="인스타그램 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-i-c.png"
-                      alt="인스타그램 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_btm">
-                <li>
-                  <a href="#none">
-                    <strong>전체메뉴</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>메뉴닫기</p>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </li>
-          <!-- class="main_menu" -->
-          <li class="quick_menu pc">
-            <a href="#none" class="menu_click">
-              <img src="images/quick-menu-icon02.png" />
-              <p data-txt="QUICK MENU" data-tet="퀵메뉴">퀵메뉴</p>
-            </a>
-            <nav class="gnb_center">
-              <h3>QUICK MENU</h3>
-              <a href="#none"><img src="images/menu-close.png" alt="닫기" /></a>
-              <ul class="quick_menu_tabmenu">
-                <li class="select">
-                  <a href="#none">
-                    <p>주요서비스</p>
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>재학생</p>
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>예비생</p>
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>일반인</p>
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>교직원</p>
-                    <span></span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_list quick_menu_tab1 on">
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add20.png" />
-                    <p>LMS&#40;원격수업&#41;</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-02.png" />
-                    <p>입학안내</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-03.png" />
-                    <p>도서관</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-04.png" />
-                    <p>스마트증명발급</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-05.png" />
-                    <p>인재개발실</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-portal.png" />
-                    <p>포털</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-08.png" />
-                    <p>교직원메일</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add25.png" />
-                    <p>시설물사용신청</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-09.png" />
-                    <p>코러스</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add10.png" />
-                    <p>식단</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-10.png" />
-                    <p>학생미래지원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-07.png" />
-                    <p>학생메일</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add18.png" />
-                    <p>발전기금</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add19.png" />
-                    <p>국제교류</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-04.png" />
-                    <p>비전임교원제증명발급신청</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add27.png" />
-                    <p>버스안내</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_list quick_menu_tab2">
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add21.png" />
-                    <p>학생회</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add20.png" />
-                    <p>LMS&#40;원격수업&#41;</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-04.png" />
-                    <p>스마트증명발급</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-portal.png" />
-                    <p>포털</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add17.png" />
-                    <p>장학안내</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add19.png" />
-                    <p>국제교류</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add16.png" />
-                    <p>보건소</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add15.png" />
-                    <p>행복상담센터</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-05.png" />
-                    <p>인재개발실</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-03.png" />
-                    <p>도서관</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-07.png" />
-                    <p>학생메일</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add23.png" />
-                    <p>대학홍보</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add01.png" />
-                    <p>동창회</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add13.png" />
-                    <p>원격지원</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_list quick_menu_tab3">
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add23.png" />
-                    <p>대학홍보</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-02.png" />
-                    <p>입학안내</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add10.png" />
-                    <p>대학정보공시</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add19.png" />
-                    <p>국제교류</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add09.png" />
-                    <p>캠퍼스안내</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add11.png" />
-                    <p>찾아오는길</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-portal.png" />
-                    <p>포털</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add20.png" />
-                    <p>LMS&#40;원격수업&#41;</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add18.png" />
-                    <p>발전기금</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_list quick_menu_tab4">
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add23.png" />
-                    <p>대학홍보</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add18.png" />
-                    <p>발전기금</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add07.png" />
-                    <p>평생교육원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add24.png" />
-                    <p>국제언어교육원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-03.png" />
-                    <p>도서관</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add02.png" />
-                    <p>원격교육연수원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add04.png" />
-                    <p>산학협력단</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add05.png" />
-                    <p>수련원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add01.png" />
-                    <p>동창회</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add09.png" />
-                    <p>캠퍼스안내</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add11.png" />
-                    <p>찾아오는길</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_list quick_menu_tab5">
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add03.png" />
-                    <p>부정청탁신고</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-04.png" />
-                    <p>스마트증명발급</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-03.png" />
-                    <p>도서관</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-portal.png" />
-                    <p>포털</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add18.png" />
-                    <p>발전기금</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add22.png" />
-                    <p>교수회</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add12.png" />
-                    <p>노동조합</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-08.png" />
-                    <p>교직원메일</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add05.png" />
-                    <p>수련원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quickmenu-icon-add13.png" />
-                    <p>원격지원</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/quick-04.png" />
-                    <p>비전임교원제증명발급신청</p>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </li>
-          <!-- class="quick_menu" -->
-          <li class="search pc">
-            <a href="#none" class="menu_click">
-              <img src="images/quick-menu-icon03.png" />
-              <p data-txt="SEARCH" data-tet="통합검색">통합검색</p>
-            </a>
-            <nav class="gnb_right">
-              <ul class="quick_menu_button">
-                <li>
-                  <a href="#none">
-                    <img src="images/ico-login.png" alt="로그인" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/util-icon02.png" alt="검색" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/util-icon03.png" alt="LANG" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <strong>QUICK MENU</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/menu-close.png" alt="닫기" />
-                  </a>
-                </li>
-              </ul>
-              <div>
-                <input type="text" placeholder="검색어를 입력하세요." />
-                <img src="images/search.png" alt="검색" />
-              </div>
-              <h3>통합검색</h3>
-              <ul class="quick_menu_list">
-                <li>
-                  <a href="#none">계절학기</a>
-                </li>
-                <li>
-                  <a href="#none">수시</a>
-                </li>
-                <li>
-                  <a href="#none">졸업증명서</a>
-                </li>
-                <li>
-                  <a href="#none">면제</a>
-                </li>
-                <li>
-                  <a href="#none">면접</a>
-                </li>
-                <li>
-                  <a href="#none">교환학생</a>
-                </li>
-                <li>
-                  <a href="#none">수강신청</a>
-                </li>
-                <li>
-                  <a href="#none">계절</a>
-                </li>
-                <li>
-                  <a href="#none">백신</a>
-                </li>
-                <li>
-                  <a href="#none">졸업시험</a>
-                </li>
-              </ul>
-              <ul class="quick_menu_going">
-                <li>
-                  <a href="#none">
-                    <b>학과바로가기</b>
-                    <img src="images/q-more-off.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>교내사이트 바로가기</b>
-                    <img src="images/q-more-off.png" />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_sns">
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-f.png"
-                      alt="페이스북 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-f-c.png"
-                      alt="페이스북 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-b.png"
-                      alt="블로그 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-b-c.png"
-                      alt="블로그 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-y.png"
-                      alt="유튜브 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-y-c.png"
-                      alt="유튜브 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-i.png"
-                      alt="인스타그램 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-i-c.png"
-                      alt="인스타그램 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_btm">
-                <li>
-                  <a href="#none">
-                    <strong>전체메뉴</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>메뉴닫기</p>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </li>
-          <!-- class="search" -->
-          <li class="admission pc">
-            <a href="#none" class="menu_click_none">
-              <img src="images/quick-menu-icon04.png" />
-              <p data-txt="ADMISSION" data-tet="입학안내">입학안내</p>
-            </a>
-          </li>
-          <!-- class="admission" -->
-          <li class="notice pc">
-            <a href="#none" class="menu_click">
-              <img src="images/quick-menu-icon05.png" />
-              <p data-txt="NOTICE" data-tet="공지사항">공지사항</p>
-            </a>
-            <nav class="gnb_right">
-              <ul class="quick_menu_button">
-                <li>
-                  <a href="#none">
-                    <img src="images/ico-login.png" alt="로그인" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/util-icon02.png" alt="검색" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/util-icon03.png" alt="LANG" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <strong>QUICK MENU</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img src="images/menu-close.png" alt="닫기" />
-                  </a>
-                </li>
-              </ul>
-              <ul class="notice_tabmenu">
-                <li class="select">
-                  <a href="#none">공지사항</a>
-                </li>
-                <li>
-                  <a href="#none">곰나루광장</a>
-                </li>
-              </ul>
-              <div class="notice_tab1 on">
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>학생소식</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul class="on">
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2022.1학기 OCU컨소시엄 개설과목 폐강 목록 안내&#40;11개
-                          과목&#41;
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          &#40;장학&#41;2022학년도 1학기 국가근로장학생 추가 선발
-                          안내&#40;천안 화서초등학교&#41;
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          &#40;장학&#41;2022학년도 1학기 국가근로장학생 추가 선발
-                          안내&#40;천안도솔도서관&#41;
-                        </h4>
-                        <span>2022.03.02</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>2022학년도 1학기 순환버스 운행 안내</h4>
-                        <span>2022.03.02</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more on">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>행정소식</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>통합정보시스템 및 포털 서비스 중단 안내</h4>
-                        <span>2022.02.28</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2023~2024 풀브라이트 미국대학 한국어보조강사 프로그램
-                          안내
-                        </h4>
-                        <span>2022.02.24</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          산업과학대학소비조합 대학공무직&#40;조리원&#41;서류전형 합격자
-                          및 면접시험 일정
-                        </h4>
-                        <span>2022.02.23</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          모빌리티소부장사업본주 지역기업 지원사업 2차공고
-                        </h4>
-                        <span>2022.02.21</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>채용소식</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          &#91;기간연장&#93;2022년 산학협력단 계약직 운전원 신규
-                          채용 공고
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2022년도 제1회 공주대학교 국가공무원&#40;공업 9급, 전산
-                          9급&#41; 경력경
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          &#91;기간연장&#93;&#91;공주대학교 4단계
-                          BK21사업&#93;사업수행직 직원 채용 공고
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2022학년도 제3회 공주대학교 대학공무직 및 기간제근로자
-                          채용 최종합격자
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>행사안내</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>통합정보시스템 및 포털 서비스 일시 중단</h4>
-                        <span>2022.02.24</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>스탬프 찾아 떠나는 박물관 미술관 여행 진행 알림</h4>
-                        <span>2022.02.15</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2021학년도 공주대학교 재정지원사업&#40;육성, 혁신&#41;
-                          성과확산 포럼 안내
-                        </h4>
-                        <span>2022.02.14</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>★2022년도 고도육성아카데미 수강생 모집 안내★</h4>
-                        <span>2022.02.07</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>취업소식</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>2022학년도 인재개발실 연간 일정표 안내</h4>
-                        <span>2022.02.18</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>2022학년도 1학기 진로·취업 교과목 안내</h4>
-                        <span>2022.01.28</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2022년 국가직 지역인재 7급 수습직원 선발시험
-                          학교추천대상자 선발 서
-                        </h4>
-                        <span>2022.01.17</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          2022년 지역인재 7급 수습지원 선발시험 학교추천대상자
-                          선발 안내
-                        </h4>
-                        <span>2022.01.03</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>HOT뉴스</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>공주대, 중동지역 한국어 학습지원 방안 마련</h4>
-                        <span>2022.03.04</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          공주대 창업보육센터 입주기념 &#40;주&#41;에듀밋
-                          출판기념회 성료
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>공주대, 2022학년도 온라인 신입생 입학식 개최</h4>
-                        <span>2022.03.02</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>공주대, 2022학년도 신입생 충원율 99.9% 달성</h4>
-                        <span>2022.03.02</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-              </div>
-              <div class="notice_tab2">
-                <div class="notice_tab_list on">
-                  <a href="#none" class="list_title">
-                    <h3>묻고답하기</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>굳e러닝 질문</h4>
-                        <span>2022.02.18</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>ocu 계절학기 취소 가능한가요?</h4>
-                        <span>2021.12.10</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          SPSS 학생용으로 받을 수 있다고 들었는데 어떻게 해야
-                          하나요?
-                        </h4>
-                        <span>2021.12.10</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>20학점 수강</h4>
-                        <span>2021.12.09</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>스터디/모임</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          &#91;러닝회원모집&#93; 2022년 제민러너스가 다시
-                          뜁니다!
-                        </h4>
-                        <span>2022.02.23</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          사&#41;공주대 교육나눔 온라인 학습 멘토링 대학생멘토 모집
-                          안내&#40;교육봉사 시
-                        </h4>
-                        <span>2022.02.10</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>학국사스터디 하실분 구해요</h4>
-                        <span>2022.01.11</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          &#91;선거관리위원회&#93;2022년도 공정선거지원단을
-                          모집합니다!
-                        </h4>
-                        <span>2021.12.08</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>자취하숙</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          신관동 현대아파트 102동 1층에서 하숙생&#40;남&#41;구합니다.
-                        </h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>
-                          공주대 5분거리 깔끔하고 저렴합니다&#91;풀옵션/즉시입주
-                          가능&#93;~!
-                        </h4>
-                        <span>2022.03.02</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>☎남자&#40;男&#41;☎자취방☎1인실/☎풀옵션☎각방에어컨완비</h4>
-                        <span>2022.03.01</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>태양원룸 &#40;취소로 마지막 방 나왔습니다&#41;</h4>
-                        <span>2022.03.01</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-                <div class="notice_tab_list">
-                  <a href="#none" class="list_title">
-                    <h3>아르바이트</h3>
-                    <img src="images/q-more-off.png" alt="닫기" />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <h4>베스킨라빈스 신관점 아르바이트생 모집</h4>
-                        <span>2022.03.04</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>삼우타운 CU 야간알바 구인합니다.</h4>
-                        <span>2022.03.04</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>편의점 아르바이트 구함</h4>
-                        <span>2022.03.04</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <h4>◈급구◈ 생산정규직 및 아르바이트 모집</h4>
-                        <span>2022.03.03</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#none" class="more">
-                    <p>더보기</p>
-                  </a>
-                </div>
-              </div>
-              <ul class="quick_menu_going">
-                <li>
-                  <a href="#none">
-                    <b>학과바로가기</b>
-                    <img src="images/q-more-off.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <b>교내사이트 바로가기</b>
-                    <img src="images/q-more-off.png" />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_sns">
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-f.png"
-                      alt="페이스북 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-f-c.png"
-                      alt="페이스북 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-b.png"
-                      alt="블로그 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-b-c.png"
-                      alt="블로그 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-y.png"
-                      alt="유튜브 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-y-c.png"
-                      alt="유튜브 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <img
-                      src="images/sns-i.png"
-                      alt="인스타그램 바로가기"
-                      class="on"
-                    />
-                    <img
-                      src="images/sns-i-c.png"
-                      alt="인스타그램 바로가기"
-                      class="off"
-                    />
-                  </a>
-                </li>
-              </ul>
-              <ul class="quick_menu_btm">
-                <li>
-                  <a href="#none">
-                    <strong>전체메뉴</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>메뉴닫기</p>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </li>
-          <!-- class="notice" -->
-          <li class="covid_19 pc">
-            <a href="#none" class="menu_click_none">
-              <img src="images/quick-menu-icon06.png" />
-              <p data-txt="COVID-19" data-tet="코로나19 안내">코로나19 안내</p>
-            </a>
-          </li>
-          <!-- class="covid_19" -->
-        </ul>
+      <div class="section" id="section1">
+        <section class="ml">
+          <h2 class="blind">김정은 소개 페이지</h2>
+          <img src="images/am_1.png" alt="김정은 사진" />
+          <ul>
+            <li><h3>KIM JUNG EUN</h3></li>
+            <li>1993.11.11</li>
+            <li>010 2932 9311</li>
+            <li>wjddms8345@naver.com</li>
+            <li>http://kje9131.dothome.co.kr</li>
+          </ul>
+        </section>
+        <section class="mr">
+          <h2 class="blind">김정은 소개 페이지</h2>
+          <div class="skl">
+            <h3>SKILLS</h3>
+            <div class="hc">
+              <h4>Html / Css</h4>
+              <p>85%</p>
+              <div><span></span></div>
+            </div>
+            <div class="js">
+              <h4>JavaScript(JQuery)</h4>
+              <p>65%</p>
+              <div><span></span></div>
+            </div>
+            <div class="pos">
+              <h4>Photoshop</h4>
+              <p>90%</p>
+              <div><span></span></div>
+            </div>
+            <div class="ils">
+              <h4>Illustrator</h4>
+              <p>60%</p>
+              <div><span></span></div>
+            </div>
+          </div>
+          <div class="eda">
+            <h3>EDUCATION</h3>
+            <ul>
+              <li>· 2012 동일여자전산디자인 고등학교 졸업</li>
+              <li>· 2022 하이미디어 학원 UI/UX 퍼블리셔과정 수료</li>
+            </ul>
+          </div>
+          <div class="lcs">
+            <h3>LICENSE</h3>
+            <ul>
+              <li>· GTQ 그래픽기술자격 1급</li>
+              <li>· ITQ 한글엑셀 C급</li>
+              <li>· ITQ 한글파워포인트 A급</li>
+            </ul>
+          </div>
+        </section>
+        <a href="#firstPage" class="top">TOP</a>
       </div>
-      <article class="popup">
-        <div class="popup_wrap">
-          <ul class="popup_bnr cl">
+      <div class="section" id="section2">
+        <h2>PORTFOLIO</h2>
+        <div class="slide active" id="slide1" data-anchor="slide1">
+          <img
+            src="images/po_gif1.gif"
+            alt="2022김정은 포트폴리오 / pc버전"
+            class="gif"
+          />
+          <ul class="list no_img">
+            <li>Design &amp; Web Publishing</li>
             <li>
-              <a href="#none">
-                <img
-                  src="images/temp_1.jpg"
-                  alt="2022학년도 국립공주대학교 / 온라인 신입생 입학식 / 신입생 입학식 영상 / 영상 바로가기 &gt;"
-                />
-              </a>
+              <span>#HTML</span>
+              <span>#CSS</span>
+              <span>#JQuery</span>
+              <span>#Cross Browsing</span>
+              <span>#웹 표준</span>
+              <span>#Plugin</span>
+            </li>
+            <li>Brand <span>김정은 포트폴리오</span></li>
+            <li>Design <span>100%</span></li>
+            <li>Web Publishing <span>90%</span></li>
+            <li>Production Period <span>4weeks</span></li>
+            <li>Year <span>2022</span></li>
+          </ul>
+          <a href="index.html" target='_blank' class="website">
+            <p>Website</p>
+            <img src="images/po_icon.png" alt="웹사이트 바로가기" />
+          </a>
+          <a href="process1.html" target='_blank' class="process">
+            <p>Process</p>
+            <img src="images/po_icon.png" alt="프로세스 바로가기" />
+          </a>
+        </div>
+
+        <div class="slide" id="slide2" data-anchor="slide2">
+          <img
+            src="images/po_gif3.gif"
+            alt="2022김정은 포트폴리오 / 국립공주대학교 메인페이지 pc버전"
+            class="gif"
+          />
+          <img
+            src="images/po3-2.png"
+            alt="2022김정은 포트폴리오 /국립공주대학교 메인페이지 모바일버전"
+            class="po_mob"
+          />
+          <ul class="list">
+            <li class="lust_small">Web Publishing <span>&#40;Main Page&#41;</span></li>
+            <li>
+              <span>#HTML</span>
+              <span>#CSS</span>
+              <span>#JQuery</span>
+              <span>#Cross Browsing</span>
+              <span>#웹 표준</span>
+              <span>#반응형</span>
+            </li>
+            <li>Brand <span>국립공주대학교</span></li>
+            <li>Design <span>0%</span></li>
+            <li>Web Publishing <span>100%</span></li>
+            <li>Production Period <span>2weeks</span></li>
+            <li>Year <span>2022</span></li>
+          </ul>
+          <a href="portfolio3/index.html" target='_blank' class="website">
+            <p>Website</p>
+            <img src="images/po_icon.png" alt="웹사이트 바로가기" />
+          </a>
+        </div>
+
+        <div class="slide" id="slide3" data-anchor="slide3">
+          <img
+            src="images/po_gif2.gif"
+            alt="2022김정은 포트폴리오 / 산청군청 메인페이지 pc버전"
+            class="gif"
+          />
+          <img
+            src="images/po2-2.png"
+            alt="2022김정은 포트폴리오 / 산청군청 메인페이지 모바일버전"
+            class="po_mob"
+          />
+          <ul class="list">
+            <li class="lust_small">Web Publishing <span>&#40;Main Page&#41;</span</li>
+            <li>
+              <span>#HTML</span>
+              <span>#CSS</span>
+              <span>#JQuery</span>
+              <span>#JavaScript</span>
+              <span>#Cross Browsing</span>
+              <span>#웹 표준</span>
+              <span>#반응형</span>
+            </li>
+            <li>Brand <span>산청군청</span></li>
+            <li>Design <span>0%</span></li>
+            <li>Web Publishing <span>80%</span></li>
+            <li>Production Period <span>4weeks</span></li>
+            <li>Year <span>2022</span></li>
+          </ul>
+          <a href="portfolio2/index.html" target='_blank' class="website">
+            <p>Website</p>
+            <img src="images/po_icon.png" alt="웹사이트 바로가기" />
+          </a>
+          <a href="process2.html" target='_blank' class="process">
+            <p>Process</p>
+            <img src="images/po_icon.png" alt="프로세스 바로가기" />
+          </a>
+        </div>
+
+        <div class="slide" id="slide4" data-anchor="slide4">
+          <img
+            src="images/po_gif4.gif"
+            alt="2022김정은 포트폴리오 / 뷰티성형외과 메인페이지 pc버전"
+            class="gif"
+          />
+          <ul class="list no_img">
+            <li class="lust_small">Design &amp; Web Publishing <span>&#40;Main, sub Page&#41;</li>
+            <li>
+              <span>#HTML</span>
+              <span>#CSS</span>
+              <span>#Cross Browsing</span>
+              <span>#웹 표준</span>
+            </li>
+            <li>Brand <span>Beauty 성형외과</span></li>
+            <li>Design <span>100%</span></li>
+            <li>Web Publishing <span>100%</span></li>
+            <li>Production Period <span>2weeks</span></li>
+            <li>Year <span>2021</span></li>
+          </ul>
+          <a href="portfolio4/index.html" target='_blank' class="website">
+            <p>Website</p>
+            <img src="images/po_icon.png" alt="웹사이트 바로가기" />
+          </a>
+        </div>
+
+        <div class="slide" id="slide5" data-anchor="slide5">
+          <img
+            src="images/po_gif5.gif"
+            alt="2022김정은 포트폴리오 / SWEET HOME 메인페이지 pc버전"
+            class="gif"
+          />
+          <img
+            src="images/po4-2.png"
+            alt="2022김정은 포트폴리오 / SWEET HOME 메인페이지 모바일버전"
+            class="po_mob"
+          />
+          <ul class="list">
+            <li class="lust_small">Design &amp; Web Publishing <span>&#40;Main Page&#41;</li>
+            <li>
+              <span>#HTML</span>
+              <span>#CSS</span>
+              <span>#Cross Browsing</span>
+              <span>#웹 표준</span>
+              <span>#반응형</span>
+            </li>
+            <li>Brand <span>Sweet Home</span></li>
+            <li>Design <span>100%</span></li>
+            <li>Web Publishing <span>100%</span></li>
+            <li>Production Period <span>2weeks</span></li>
+            <li>Year <span>2021</span></li>
+          </ul>
+          <a href="portfolio5/index.html" target='_blank' class="website">
+            <p>Website</p>
+            <img src="images/po_icon.png" alt="웹사이트 바로가기" />
+          </a>
+        </div>
+        <a href="#firstPage" class="top">TOP</a>
+      </div>
+      <div class="section" id="section3">
+        <h2>Possibility</h2>
+        <dl class="rey">
+          <dt>저는 <span>'책임감과 성실함'</span> 이 좋아요</dt>
+          <dd>
+            책임감을 바탕으로 성실하며 시간약속에 민감해 꼭 지키도록 계획, 메모,
+            알람설정 등으로 노력합니다.
+          </dd>
+        </dl>
+        <dl class="fast">
+          <dt>빠른 습득력으로 손이 <span>'빨라요'</span></dt>
+          <dd>
+            지적 호기심이 많아 한번 정한 분야에 대한 깊이있는 학습을 하며,
+            <br />
+            한번 목표로 잡으면 끝까지 수행해내는 끈기가 저의 장점입니다.
+          </dd>
+        </dl>
+        <dl class="mbti">
+          <dt>나무보다 숲을 보는 <span>'INFJ'</span></dt>
+          <dd>
+            창의적인 사고로 해결책을 제시하며,<br />
+            목표 수행 시 장기적 접근으로 바라보는 넓은 시야가 장점입니다.
+          </dd>
+        </dl>
+        <dl class="clg">
+          <dt>조직생활의 신뢰도 형성을 위해 <span>'노력해요'</span></dt>
+          <dd>
+            상대방의 입장을 고려하여, 현실성 높은 대안을 구체적으로 제시하며<br />
+            상대방의 의견에도 최대한 수렴하여 건설적인 방향으로 갈수 있도록
+            중심을 잡고자 노력합니다.
+          </dd>
+        </dl>
+        <div>
+          <img
+            src="images/am_2.png"
+            alt="책임감 / 습득력 / 도전정신 / 집중력 / 창의성 / 소통능력에 관한 레이더 차트 배경"
+          />
+          <span class="hexagon"></span>
+        </div>
+        <a href="#firstPage" class="top">TOP</a>
+      </div>
+      <div class="section" id="section4">
+        <h2>
+          C<br />
+          O<br />
+          N<br />
+          T<br />
+          A<br />
+          C<br />
+          T
+        </h2>
+        <div class="ca">
+          <h3 class="typing"></h3>
+          <i class="typing-txt">Thanks for visiting my Website.</i>
+          <p>즐거움을 쫓아 성장하는 퍼블리셔가 되겠습니다.</p>
+          <ul>
+            <li>
+              <b>Name</b>
+              <p>| Kim Jung eun</p>
             </li>
             <li>
-              <a href="#none">
-                <img
-                  src="images/temp_2.jpg"
-                  alt="국민권익위원회 주관 / 「2021년도 부패방지 시책평가결과」3등급 / · 국민권익위원회에서 실시한 「2021년도 부패방지 시책평가결과」 3등급"
-                />
-              </a>
+              <b>Phone</b>
+              <p><a href="tel:01029329311">| 010 2932 9311</a></p>
             </li>
             <li>
-              <a href="#none">
-                <img
-                  src="images/temp_3.jpg"
-                  alt="2022년 1학기 2차 국가장학금 신청 사수! / 국가장학금 신청이라... 벌써 떨리는군 / '22.2.2.&#40;목&#41;~3.16.&#40;수&#41;18시"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#none">
-                <img
-                  src="images/temp_4.png"
-                  alt="세종캠퍼스 「학교사랑 1평갖기」발전기급 / 모금현황 바로가기 &gt;&gt;"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#none">
-                <img
-                  src="images/temp_5.png"
-                  alt="신관캠퍼스 주차관제 시스템 / 정기권 이용자 및 할인권 결제방법 안내 / 바로가기"
-                />
-              </a>
+              <b>Email</b>
+              <p>
+                <a href="mailto:wjddms8345@naver.com">| wjddms8345@naver.com</a>
+              </p>
             </li>
           </ul>
-        </div>
-        <ul class="popup_page">
-          <li class="select">
-            <a href="#none"></a>
-          </li>
-          <li>
-            <a href="#none"></a>
-          </li>
-          <li>
-            <a href="#none"></a>
-          </li>
-          <li>
-            <a href="#none"></a>
-          </li>
-          <li>
-            <a href="#none"></a>
-          </li>
-        </ul>
-        <a href="#none" class="prev"
-          ><img src="images/prev.png" alt="이전"
-        /></a>
-        <a href="#none" class="next"
-          ><img src="images/next.png" alt="다음"
-        /></a>
-        <a href="#none" class="close">닫기</a>
-      </article>
-    </header>
-    <section id="cont1">
-      <h2 class="blind">학과 소개 영역</h2>
-      <div class="pc_text pc">
-        <b>스물,</b>
-        <b>나만의</b>
-        <p>플레이<br />그라운드</p>
-      </div>
-      <div class="mob_text mob">
-        <b>스물,나만의</b>
-        <b>플레이그라운드</b>
-        <p>#<span>4</span>개의 캠퍼스 #<span>7</span>개 단과대학</p>
-      </div>
-      <div class="ul_wrap">
-        <ul class="school">
-          <li class="sh1">
-            <a href="#none">
-              <img
-                src="images/play-01.jpg"
-                alt="사범대학 대표이미지"
-                class="pc"
-              />
-              <p>사범대학</p>
-            </a>
-            <p>#KONGJU<br />#사범대학</p>
-          </li>
-          <li class="sh2">
-            <a href="#none">
-              <img
-                src="images/play-02.jpg"
-                alt="인문사회과학대학 대표이미지"
-                class="pc"
-              />
-              <p>인문사회과학대학</p>
-            </a>
-            <p>#KONGJU<br />#인문사회과학대학</p>
-          </li>
-          <li class="sh3">
-            <a href="#none">
-              <img
-                src="images/play-03.jpg"
-                alt="자연과학대학 대표이미지"
-                class="pc"
-              />
-              <p>자연과학대학</p>
-            </a>
-            <p>#KONGJU<br />#자연과학대학</p>
-          </li>
-          <li class="sh4">
-            <a href="#none">
-              <img
-                src="images/play-04.jpg"
-                alt="공과대학 대표이미지"
-                class="pc"
-              />
-              <p>공과대학</p>
-            </a>
-            <p>#CHEONAN<br />#공과대학</p>
-          </li>
-          <li class="sh5">
-            <a href="#none">
-              <img
-                src="images/play-05.jpg"
-                alt="산업과학대학 대표이미지"
-                class="pc"
-              />
-              <p>산업과학대학</p>
-            </a>
-            <p>#YESAN<br />#산업과학대학</p>
-          </li>
-          <li class="sh6">
-            <a href="#none">
-              <img
-                src="images/play-06.jpg"
-                alt="간호보건대학 대표이미지"
-                class="pc"
-              />
-              <p>간호보건대학</p>
-            </a>
-            <p>#KONGJU<br />#간호보건대학</p>
-          </li>
-          <li class="sh7">
-            <a href="#none">
-              <img
-                src="images/play-07.jpg"
-                alt="예술대학 대표이미지"
-                class="pc"
-              />
-              <p>예술대학</p>
-            </a>
-            <p>#KONGJU<br />#예술대학</p>
-          </li>
-        </ul>
-      </div>
-      <div class="ul_select mob">
-        <ul>
-          <li>1</li>
-        </ul>
-        <span> / </span>
-        <span>7</span>
-      </div>
-      <a href="#none" class="prev">
-        <img src="images/s2-left.png" alt="이전으로" />
-      </a>
-      <a href="#none" class="next">
-        <img src="images/s2-right.png" alt="다음으로" />
-      </a>
-    </section>
-    <section id="cont2">
-      <h2 class="blind">NEWS 영역</h2>
-      <div class="bg_text">
-        <p class="p1">VALUE</p>
-        <p class="p2">CREATOR</p>
-        <p class="p3">KNU 2030</p>
-      </div>
-      <article>
-        <h3>NEWS</h3>
-        <ul>
-          <li>
-            <a href="#none">
-              <p>HOT 뉴스</p>
-              <img src="images/news-btn-plus.png" alt="HOT 뉴스 바로가기">
-            </a>
-          </li>
-        <ul>
-          <li>
-            <a href="#none">
-              <p>언론속의 KNU</p>
-              <img src="images/news-btn-plus.png" alt="언론속의 KNU 바로가기">
-            </a>
-          </li>
-        <ul>
-          <li>
-            <a href="#none">
-              <p>총장 주요 사업실적</p>
-              <img src="images/news-btn-plus.png" alt="총장 주요 사업실적 바로가기">
-            </a>
-          </li>
-        <ul>
-          <li>
-            <a href="#none">
-              <p>학내주요소식</p>
-              <img src="images/news-btn-plus.png" alt="학내주요소식 바로가기">
-            </a>
-          </li>
-        </ul>
-      </article>
-      <ul class="news">
-        <li>
-            <img src="images/news_1.jpg" alt="공주대 미세먼지 줄이기 실천 캠페인 활동 전개 사진">
-            <div class="news_text">
-              <p>2022.04</p>
-              <strong>15</strong>
-              <dl>
-                <dt>공주대 미세먼지 줄이기 실천 캠페인 활동 전개</dt>
-                <dd>공주대 미세먼지 줄이기 실천 캠페인 활동 전개 - 공주시 버스터미널, 강북교차로 등 다중이용장소에서 실시 국립 공주대학교&#40;총장</dd>
-              </dl>
-            </div>
-            <a href="#none">Read more</a>
-        </li>
-        <li>
-            <img src="images/news_2.jpg" alt="공주대, 여대학원생 공학연구팀제 지원사업 4개 연구팀 선정 사진">
-            <div class="news_text">
-              <p>2022.04</p>
-              <strong>14</strong>
-              <dl>
-                <dt>공주대, 여대학원생 공학연구팀제 지원사업 4개 연구팀 선정</dt>
-                <dd>국립 공주대학교&#40;총장 원성수, 산학협력단장 김길희&#41;는 한국여성과학기술인육성재단&#40;WISET&#41; 2022년도 여대학원생 공학연구팀제 지원사업 에</dd>
-              </dl>
-            </div>
-            <a href="#none">Read more</a>
-        </li>
-        <li>
-            <img src="images/news_3.jpg" alt="공주대,“금형인의 좌우명”특강 실시 사진">
-            <div class="news_text">
-              <p>2022.04</p>
-              <strong>14</strong>
-              <dl>
-                <dt>공주대,“금형인의 좌우명”특강 실시</dt>
-                <dd>국립 공주대학교&#40;총장 원성수&#40; 공과대학&#40;학장 김재웅&#40; 금형설계공학과는 전 객원교수인 김세환 교수를 모시고 1학년 신입생을 대상으로</dd>
-              </dl>
-            </div>
-            <a href="#none">Read more</a>
-        </li>
-      </ul>
-    </section>
-    <section id="cont3">
-      <h2 class="blind">PEOPLE 영역</h2>
-      <div class="pp1">
-        <b>
-          <span>새로운 가치</span>를 <span>탐구</span>하고<br>
-          <span>리더</span>로서의 자질과 덕목을<br>
-          추구할 수 있는 <span>능력</span>
-        </b>
-        <p>KONGJU</p>
-        <strong>PEOPLE</strong>
-      </div>
-      <div class="pp2">
-        <div class="img"></div>
-        <div class="text">
-          <h4>PEOPLE</h4>
-          <p>공주대 재외한인연구소, ‘재중 한인의 어제, 오늘 그리고 내일’ 출간기념 북콘서트 개최</p>
-          <a href="#none">
-            <img src="images/plus.png" alt="PEOPLE 더보기">
+          <a href="images/cv.pdf" target="_blank" class="cv">
+            <img src="images/cv.png" alt="이력서 바로가기" />
+            <i>이력서<br>바로가기</i>
+          </a>
+          <a href="https://github.com/KJE9131" target="_blank"class="git">
+            <img src="images/github.png" alt="깃허브 바로가기">
+            <i>github<br>바로가기</i>
           </a>
         </div>
+        <a href="#firstPage" class="top">TOP</a>
       </div>
-    </section>
-    <section id="cont4">
-      <h2>
-        <span>국</span>립공주대학교
-      </h2>
-      <i>나만의 플레이그라운드</i>
-      <p>국립 공주대학교는 1948년 공주사범대학으로 출발하여 1991년에 충남 유일의 종합국립대학교로 승격되었습니다.<br class="pc">
-        현재는 신입생 선발기준 전국 국공립대 9위 규모로서 공주-예산-천안-세종 지역에 특성화된 캠퍼스를 운영하고 있습니다.<br class="pc">
-        공주대학교는 약 1만 5천여 명의 재학생들을 위해 전체 교직원들이 최선을 다하는 가운데 충남과 세종을 대표하는<br class="pc">
-        거점대학교로 성장하고 있습니다.
-      </p>
-      <img src="images/gongju_c2.png" alt="공주">
-      <div class="knu">
-        <span></span>
-        <i>Value Creator </i>
-        <em>KNU 2030</em>
-      </div>
-      <ul>
-        <li>가치탐구 역량</li>
-        <li>자기계발 역량</li>
-        <li>의사소통 역량</li>
-        <li>공동체 역량</li>
-      </ul>
-      <b>국립공주대학교는 진리탐구, 가치창조, 정의실천이라는 교육이념 아래 교육환경의 빠른 변화에 발 빠르게 대응하며 인성은 물론 창의성과 문제해결 능력을 키울 수 있는 교육과정 혁신을 통해 학생중심의 경쟁력 있는 대학 만들기에 최선을 다하고 있습니다.</b>
-    </section>
-    <section id="cont5">
-      <h2 class="blind">캠퍼스 안내 영역 시작</h2>
-      <div class="campus_start">
-        <div class="st1"></div>
-        <div class="st2"></div>
-        <div class="st3">
-          <h3>충남·세종을 <span>대표하는</span><br>4개의 캠퍼스</h3>
-          <p>#<span>C</span>HEONAN #<span>S</span>EJONG #<span>K</span>ONGJU #<span>Y</span>ESAN</p>
-        </div>
-      </div>
-      <div class="campus_end">
-        <div>
-          <p>Playground in</p>
-          <p>Campus</p>
-        </div>
-        <ul>
-          <li>CHEONAN</li>
-          <li>SEJONG</li>
-          <li>KONGJU</li>
-          <li>YESAN</li>
-        </ul>
-      </div>
-    </section>
-    <div id="blank"></div>
-    <section id="cont6">
-      <h2>PERFORMANCE</h2>
-      <ul>
-        <li class="big">
-          <strong>99.9<span>%</span></strong>
-          <p>2022학년도<br>
-            신입생 충원율</p>
-        </li>
-        <li class="small">
-          <strong>436<span>명</span></strong>
-          <p>2022년<br>
-            교원임용고시 합격자</p>
-        </li>
-        <li class="small">
-          <strong>63.1<span>억</span></strong>
-          <p>2021년도<br>
-            대학혁신지원 사업비</p>
-        </li>
-        <li class="big">
-          <strong>9.58<span>억</span></strong>
-          <p>2021년 교육부 고교교육 기여대학<br>
-            지원사업 선정&#40;14년 연속&#41;</p>
-        </li>
-        <li class="big">
-          <strong>8.32 <span>:1</span></strong>
-          <p>2022년도<br>
-            수시모집 경쟁률</p>
-        </li>
-        <li class="small">
-          <strong>42.8<span>억</span></strong>
-          <p>2021년도<br>
-            국립대학육성 사업비</p>
-        </li>
-      </ul>
-    </section>
-    <section id="cont7">
-      <article class="sns1">
-        <span class="youtube"></span>
-        <a href="#none">
-          <img src="images/sns_img1.jpg" alt="유튜브 / [KNUBS 라디오] 20대 대학생에게 버킷리스트를 물어봤습니다 썸네일">
-        </a>
-      </article>
-      <article class="sns2">
-        <div>
-          <span class="facebook"></span>
-          <a href="#none">
-            <img src="images/sns_img2.jpg" alt="페이스북 / 리포트 쓰는 꿀팁 썸네일">
-          </a>
-        </div>
-        <div>
-          <span class="blog"></span>
-          <a href="#none">
-            <img src="images/sns_img3.jpg" alt="네이버 블로그 / 날씨를 알 수 있는 사이트 소개 썸네일">
-          </a>
-        </div>
-        <div>
-          <span class="youtube"></span>
-          <a href="#none">
-            <img src="images/sns_img4.jpg" alt="유튜브 / [KNUBS 라디오] 몽글몽글 설렘가득 연애썰 사연모음 썸네일">
-          </a>
-        </div>
-        <div>
-          <span class="facebook"></span>
-          <a href="#none">
-            <img src="images/sns_img5.jpg" alt="페이스북 / 벚꽃 나무 사진">
-          </a>
-        </div>
-      </article>
-    </section>
-    <footer>
-      <div class="footer_menu">
-        <ul>
-          <li>
-            <a href="#none">대학정보공시</a>
-          </li>
-          <li>
-            <a href="#none">개인정보처리방침</a>
-          </li>
-          <li>
-            <a href="#none">청렴행정센터</a>
-          </li>
-          <li>
-            <a href="#none">업무추진비공개</a>
-          </li>
-          <li>
-            <a href="#none">공무행동강령</a>
-          </li>
-          <li>
-            <a href="#none">정보공개</a>
-          </li>
-          <li>
-            <a href="#none">열린총장실</a>
-          </li>
-          <li>
-            <a href="#none">찾아오시는길</a>
-          </li>
-        </ul>
-      </div>
-      <img src="images/footer-logo.png" alt="국립공주대학교">
-      <div class="add">
-        <h3>LOCATION</h3>
-        <address>
-          공주캠퍼스&nbsp;&nbsp; <br class="mob">&#40;32588&#41;충청남도 공주시 공주대학로 56&#40;신관동 182&#41;<br>
-          <br class="mob">
-          <span class="mob">
-            <a href="tel:041-850-8114">대표전화&nbsp;&nbsp; <br class="mob">041-850-8114</a><br>
-          </span>
-          <br class="mob">
-          천안캠퍼스&nbsp;&nbsp;<br class="mob"> &#40;31080&#41;충청남도 천안시 서북구 천안대로 1223-24&#40;부대동 275&#41;<br>
-          <br class="mob">
-          예산캠퍼스&nbsp;&nbsp; <br class="mob">&#40;32439&#41;충청남도 예산군 예산읍 대학로 54&#40;대회리1&#41;<br>
-          <br class="mob">
-          Copyright©2021 <br class="mob">Kongju National University.&nbsp;&nbsp; <br class="mob">All Rights Reserved
-          
-        </address>
-      </div>
-      <div class="tel pc">
-        <h3>CONTACT</h3>
-        <address>
-          <a href="tel:041-850-8114">대표전화&nbsp;&nbsp; 041-850-8114</a>
-        </address>
-      </div>
-      <div class="sns">
-        <ul>
-          <li>
-            <a href="#none">
-              <img src="images/footer_mark.png" alt="웹접근성 마크">
-            </a>
-          </li>
-          <li>
-            <a href="#none">
-              <img src="images/sns-f.png" alt="페이스북 로고">
-            </a>
-          </li>
-          <li>
-            <a href="#none">
-              <img src="images/sns-b.png" alt="네이버 블로그 로고">
-            </a>
-          </li>
-          <li>
-            <a href="#none">
-              <img src="images/sns-y.png" alt="유튜브 로고">
-            </a>
-          </li>
-          <li>
-            <a href="#none">
-              <img src="images/sns-i.png" alt="인스타그램 로고">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript">
+      /* fullpage*/
+      var deleteLog = false;
+      var ck = 0;
+      var myFullpage = new fullpage("#fullpage", {
+        v2compatible: true,
+        sectionsColor: ["#402e75 ", "#e7e7e7"],
+        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+        menu: "#menu",
+        navigation: true,
+        navigationTooltips: [
+          "INTRO",
+          "ABOUT ME",
+          "PORTFOLIO",
+          "POSSIBILITY",
+          "CONTACT",
+        ],
+        showActiveTooltip: true,
+        slidesNavigation: true,
+        afterLoad: function (anchorLink, index) {
+          if (index == 2) {
+            $(".hc span").animate({ width: "85%" }, 700);
+            $(".js span").animate({ width: "65%" }, 700);
+            $(".pos span").animate({ width: "90%" }, 700);
+            $(".ils span").animate({ width: "60%" }, 700);
+          } else {
+            $(".hc span").animate({ width: "0%" }, 700);
+            $(".js span").animate({ width: "0%" }, 700);
+            $(".pos span").animate({ width: "0%" }, 700);
+            $(".ils span").animate({ width: "0%" }, 700);
+          }
+
+          if (index == 4) {
+            $("#section3 img").addClass("on");
+            $("#section3 .hexagon").addClass("on");
+            $("#section3 .rey dt").animate(
+              { left: "200px", opacity: "1" },
+              900
+            );
+            $("#section3 .rey dd").animate(
+              { left: "200px", opacity: "1" },
+              900
+            );
+            $("#section3 .fast dt").animate(
+              { left: "200px", opacity: "1" },
+              1200
+            );
+            $("#section3 .fast dd").animate(
+              { left: "200px", opacity: "1" },
+              1200
+            );
+            $("#section3 .mbti dt").animate(
+              { left: "200px", opacity: "1" },
+              1500
+            );
+            $("#section3 .mbti dd").animate(
+              { left: "200px", opacity: "1" },
+              1500
+            );
+            $("#section3 .clg dt").animate(
+              { left: "200px", opacity: "1" },
+              1800
+            );
+            $("#section3 .clg dd").animate(
+              { left: "200px", opacity: "1" },
+              1800
+            );
+          } else {
+            $("#section3 img").removeClass("on");
+            $("#section3 .hexagon").removeClass("on");
+            $("#section3 .rey dt").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .rey dd").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .fast dt").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .fast dd").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .mbti dt").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .mbti dd").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .clg dt").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+            $("#section3 .clg dd").animate(
+              { left: "-300px", opacity: "0" },
+              100
+            );
+          }
+
+          if (index == 5) {
+            $("#section4 span").animate({ left: 0, opacity: "1" }, 900);
+
+            if (ck == 0) {
+              ck = 1;
+              var typingBool = false;
+              var typingIdx = 0;
+
+              var typingTxt = $(".typing-txt").text();
+
+              typingTxt = typingTxt.split("");
+
+              if (typingBool == false) {
+                typingBool = true;
+                var tyInt = setInterval(typing, 100);
+              }
+
+              function typing() {
+                if (typingIdx < typingTxt.length) {
+                  $(".typing").append(typingTxt[typingIdx]);
+                  typingIdx++;
+                } else {
+                  clearInterval(tyInt);
+                }
+              }
+            } // if
+          } else {
+            $("#section4 span").animate({ left: "-100px", opacity: "0" }, 900);
+          }
+        },
+      });
+    </script>
   </body>
 </html>
